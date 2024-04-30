@@ -1,12 +1,12 @@
 class Voxd < Formula
   desc "voxd is a HTTP wrapper around macOs' speech synthesis system"
   homepage "https://github.com/blubber/voxd"
-  url "https://github.com/blubber/voxd/releases/download/v0.1/voxd"
-  sha256 "f3debce572bf9458149b118d6617b0452048030e088d5ed465e91890028cca73"
-  version "0.1"
+  url "https://github.com/blubber/voxd/releases/download/v0.1.1/voxd-0.1.1.tar.gz"
+  sha256 "2346580eae6836c30e46e3e710db4c461a51db60b385c97c612bec400460c16e"
 
   def install
-    bin.install "#{buildpath}/voxd"
+    bin.install "#{buildpath}/bin/voxd"
+    share.install "#{buildpath}/share/voxd.json.example"
   end
 
   service do
